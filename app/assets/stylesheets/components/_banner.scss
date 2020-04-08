@@ -6,6 +6,22 @@
   padding-top: 40vh;
 }
 
+.banner-content {
+  display: flex;
+}
+
 .left-banner-content {
-  width: 60%
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#banner-avatar {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.right-banner-content {
+  width: 60%;
 }
