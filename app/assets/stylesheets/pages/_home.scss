@@ -1,0 +1,39 @@
+// Specific CSS for your home-page
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin: 75px 0 50px 0;
+}
+
+.project-card {
+  box-shadow: 5px 5px 15px 0px rgba(128,128,128,1);
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  text-align: center;
+  h3, p {
+    visibility: hidden;
+  }
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    h3, p {
+      visibility: visible;
+      color: white;
+    }
+  }
+}
