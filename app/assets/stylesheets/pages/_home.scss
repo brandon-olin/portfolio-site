@@ -2,7 +2,7 @@
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: space-around;
 }
 
@@ -16,24 +16,41 @@
   width: 300px;
   height: 200px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .project-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
-  padding: 25px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3C4043;
+}
+
+.project-card:hover .project-description {
+  opacity: 1;
+}
+
+.project-card-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
-  h3, p {
-    visibility: hidden;
-  }
-  &:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    h3, p {
-      visibility: visible;
-      color: white;
-    }
-  }
 }

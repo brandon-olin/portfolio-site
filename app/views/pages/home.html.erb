@@ -17,24 +17,22 @@
       <p>Projects completed during the Le Wagon Bootcamp and since.</p>
     </div>
     <div class="project-grid">
-      <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-size: cover;">
-        <div class="project-description">
-          <h3>Sustainable</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum alias assumenda...</p>
+      <%= link_to 'http://www.sustainable-app.com/' do %>
+        <div class="project-card">
+          <img src="sustainable.png" class="project-image">
+          <div class="project-description">
+            <p class="project-card-text">SustainABLE: Job board for entry level developers and mission driven companies.</p>
+          </div>
         </div>
-      </div>
-      <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-size: cover;">
-        <div class="project-description">
-          <h3>Sustainable</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum alias assumenda...</p>
+      <% end %>
+      <%= link_to 'https://animal-kingdom-kathrin298.herokuapp.com/' do %>
+        <div class="project-card">
+          <img src="animal-kingdom.png" class="project-image">
+          <div class="project-description">
+            <p class="project-card-text">Animal Kingdom: Marketplace app to rent exotic animals for private events.</p>
+          </div>
         </div>
-      </div>
-      <div class="project-card" style="background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); background-size: cover;">
-        <div class="project-description">
-          <h3>Sustainable</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum alias assumenda...</p>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
