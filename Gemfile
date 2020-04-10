@@ -6,7 +6,7 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 # Use sqlite3 as the database for Active Record
-
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -19,7 +19,7 @@ gem 'webpacker'
 # gem 'mini_racer', platforms: :ruby
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
-gem "rename"
+gem 'rename'
 gem 'simple_form'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
