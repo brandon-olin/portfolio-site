@@ -13,7 +13,8 @@
   },
   "scripts": {
   "webpack:deploy": "webpack --config=webpack/webpack.config.js -p",
-  "heroku-postbuild": "npm run webpack:deploy"
+  "heroku-postbuild": "npm run webpack:deploy",
+  "start": "node your-script.js"
   },
   "engines": {
     "node": "13.12.0",
