@@ -16,6 +16,7 @@
   "heroku-postbuild": "npm run webpack:deploy"
   },
   "engines": {
-    "node": "13.12.0"
+    "node": "13.12.0",
+    "npm": "6.14.4"
   }
 }
